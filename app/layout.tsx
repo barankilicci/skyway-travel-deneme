@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,14 +13,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
-      <body>
-        <Script
+      <head>
+        <script
           src="https://wayfle-io-widget.vercel.app/widget.js"
           data-organization-id="org_394LFTJsrpAPUGjWjXmKhjnHhRr"
-          strategy="beforeInteractive"
         />
-        {children}
-      </body>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
