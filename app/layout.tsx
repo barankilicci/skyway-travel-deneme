@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
         <script
           src="https://wayfle-io-widget.vercel.app/widget.js"
-          data-organization-id="org_394TLxpfGKksYnLKAAaoWxr3O3r"
+          data-organization-id="org_394YeHYUAeiojnZttMNXbqjfUhW"
         />
       </head>
       <body>{children}</body>
